@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Desafio Entregable - "Mi Primer MVT"</h1>
+    <h2>Franco Carbone - Python Coderhouse - Comisión 37355</h2>
+    <p>En el siguiente listado se visualizan los miembros de mi familia y su información.</p>
+    <ul>
+        {% for familiar in familiares %}
+        <li> Hola, mi nombre es {{familiar.nombre}}, tengo {{familiar.edad}} años y soy el/la {{familiar.parentezco}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
